@@ -20,12 +20,7 @@
 #     emptylist.append(value)
 # print(emptylist)
 Number = []
-for anshu in  range(10):
-    Number.append(anshu)
+for x in range(10, -15, -2):
+    Number.append(x)
+
 print(Number)
-
-
-
-
-
-
