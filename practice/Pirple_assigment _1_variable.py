@@ -3,7 +3,7 @@ def singer():
 
 
 def composer():
-    return "hello"
+    return "honey singh"
 
 
 def release_date():
