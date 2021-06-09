@@ -16,20 +16,20 @@ def drafield(field):
         else:
             print("------")
 player = 1
-currentfield = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
+currentfield = [["00", "00", "00"], ["00", "00", "00"], ["00", "00", "00"]]
 # print(currentfield)
 while(True):
     print("players turn: ", player)
-    row_name = int(input("please Enter the Row\n"))
-    column_name = int(input("please Enter the column\n"))
+    row_name, column_name = [int(x) for x in input("please Enter the Row,Column\n").split(",")]
+
     if player == 1:
 
-        if  currentfield[column_name][row_name] == " ":
+        if  currentfield[column_name][row_name] == "00":
             currentfield[column_name][row_name] = "X"
             player = 2
     else:
 
-        if  currentfield[column_name][row_name] == " ":
+        if  currentfield[column_name][row_name] == "00":
             currentfield[column_name][row_name] = "O"
             player = 1
     drafield(currentfield)
