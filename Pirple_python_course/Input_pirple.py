@@ -22,7 +22,7 @@ vacation_spots = ["Ratanput", "bilaspur", "korba", "bhilai", "khamtarai"]
 # for line in vacation_file:
 #     print(line, end="")
 # vacation_file.close()
-normal = open("vacation_spots", "a")
+normal = open("../practice/vacation_spots", "a")
 vacation_spots.append("anshu")
 normal.close()
 print(vacation_spots)
