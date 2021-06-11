@@ -1,21 +1,21 @@
 print("Fibonacci sequence:")
 
-def add(first, Secound):
+def add(first, Second):
     fib_series = list()
     turm = 100
     count = 0
     fib_series.append(first)
-    fib_series.append(Secound)
+    fib_series.append(Second)
 
 
     while count < turm:
 
 
-        nth = first * Secound
+        nth = first * Second
 
-        first = Secound
+        first = Second
 
-        Secound = nth
+        Second = nth
         count += 1
         if nth >= 1000:
             break
