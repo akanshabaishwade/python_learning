@@ -16,7 +16,7 @@ def drafield(field):
         else:
             print("------")
 player = 1
-currentfield = [["00", "00", "00"], ["00", "00", "00"], ["00", "00", "00"]]
+currentfield = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 # print(currentfield)
 while(True):
     print("players turn: ", player)
@@ -24,12 +24,12 @@ while(True):
 
     if player == 1:
 
-        if  currentfield[column_name][row_name] == "00":
+        if  currentfield[column_name][row_name] == " ":
             currentfield[column_name][row_name] = "X"
             player = 2
     else:
 
-        if  currentfield[column_name][row_name] == "00":
+        if  currentfield[column_name][row_name] == " ":
             currentfield[column_name][row_name] = "O"
             player = 1
     drafield(currentfield)
