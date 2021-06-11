@@ -29,6 +29,7 @@ if os.path.isfile("./" + file_name):
         # Anyway, this is the requested task so here it is
         with open(file_name, "w") as write_file:
             write_file.write("")
+    #         use elif and command replace for replace it
     elif action == "replace":
         line_num = int(
             input("Please enter the line number for the replacement: "))
