@@ -31,12 +31,18 @@ if os.path.isfile("./" + file_name):
             write_file.write("")
     #         use elif and command replace for replace it
     elif action == "replace":
+        # create variable and make user input in int form
         line_num = int(
             input("Please enter the line number for the replacement: "))
+        # make user input for user note
         text = input("Please enter your note: ")
+        # use with for open the file for only read as new variable name read_file
         with open(file_name, "r") as read_file:
+            # read_file in use read lines for space (one line one space)
             lines = read_file.readlines()
+        #     do same thing for write file use with an as "w"
         with open(file_name, "w") as write_file:
+            #
             for idx, line in enumerate(lines):
                 # print(idx, line)
                 if idx == line_num - 1:
@@ -47,9 +53,9 @@ if os.path.isfile("./" + file_name):
                     write_file.write(line)
 
     else:
-        print("Sorry, unrecognized action 😢")
+        print("Sorry, unrecognized action")
 else:
-    print("Nope, this file does not exist, I'm going to create it for you! 😄")
+    print("Nope, this file does not exist, I'm going to create it for you!")
     text = input("Please enter your note: ")
     with open(file_name, "w") as write_file:
         write_file.write(text + "\n")
