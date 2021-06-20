@@ -29,4 +29,4 @@ def playing_board(rows, columns):
         print("Sorry, cannot create the board, too many".format(reason))
         return False
 
-playing_board(10,10)
+playing_board(100,100)
