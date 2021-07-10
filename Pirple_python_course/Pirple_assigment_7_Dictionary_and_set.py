@@ -6,6 +6,7 @@ def ask_keys():
     key = input("\nGreat, let\'s start the game, guess the key? - \n")
     value = input("\nWhat you think is the value of " + key + "?\n")
     # here we use if statement if key and current key is equal in both are small letter  and check if condition
+
     if key and value:
         key = key.lower()
         value = value.lower()

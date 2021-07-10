@@ -27,6 +27,7 @@ while(True):
         if  currentfield[column_name][row_name] == " ":
             currentfield[column_name][row_name] = "X"
             player = 2
+
     else:
 
         if  currentfield[column_name][row_name] == " ":

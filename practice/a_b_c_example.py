@@ -1,7 +1,25 @@
+# print abc
 def bord(a, b):
     for row in a:
-        for i in range (1, b+1):
-           print(row*i, end=" ")
-        print("")
+        for cloumn in range(1,b):
+            print(row*cloumn,end=" ")
 
-bord("akansha", 5)
+        print("")
+bord("anshu", 5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 def main():
-    kitten(Buffy='Mouw', Zilla='grr', Angel='rawr')
+    kitten(Buffy='Mow', Zilla='grr', Angel='rawr')
 
 
 def kitter(**kwargs):
@@ -7,11 +7,11 @@ def kitter(**kwargs):
         for k in kwargs:
             print('kitten {} say {}'.format(k, kwargs[k]))
     else:
-        print('Mouw.')
+        print('Mow.')
 
 
 def main():
-    x = dict(Buffy='Mouw', Zilla='grr', Angel='rawr')
+    x = dict(Buffy='Mow', Zilla='grr', Angel='rawr')
     kitten(**x)
 
 
@@ -21,7 +21,7 @@ def kitten(**kwargs):
         for k in kwargs:
             print('kitten {} say {}'.format(k, kwargs[k]))
     else:
-        print('Mouw.')
+        print('Mow.')
 
 
 if __name__ == '__main__':

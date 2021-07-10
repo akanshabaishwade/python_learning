@@ -21,6 +21,3 @@ for value in range(Secound_num, max_series):
 
 # call def fiction
 print(series_list)
-
-
-

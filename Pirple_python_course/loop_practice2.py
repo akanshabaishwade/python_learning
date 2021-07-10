@@ -1,5 +1,6 @@
 nayra = 10
-Top_print = "pyhton"
+Top_print = "python"
+
 for i in range(1, nayra+1):
     print(Top_print*i)
 for i in range(nayra, 0, -1):
