@@ -4,4 +4,4 @@ word, num = input().split(" ")
 permut = list(permutations(word, int(num)))
 permut.sort()
 
-[print("".join(i)) for i in permutations]
+[print("".join(i)) for i in permutations()]
