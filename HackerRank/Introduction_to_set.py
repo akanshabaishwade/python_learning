@@ -1,7 +1,7 @@
 def average(array):
     heights = set(array)
-    averg = sum(heights) / len(heights)
-    return averg
+    avg = sum(heights) / len(heights)
+    return avg
 
 
 if __name__ == '__main__':
