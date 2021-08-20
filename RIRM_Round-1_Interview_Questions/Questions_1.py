@@ -1,15 +1,24 @@
-' a. To check if the year is a Leap year or not '
-# Python program to check if year is a leap year or not
+mac = "EC:B0:8T:E4"
+mapper = {
+"E": 0,
+"T": 0
+}
 
-year = input(int())
+final_string = []
 
-if (year % 4) == 0:
-   if (year % 100) == 0:
-       if (year % 400) == 0:
-           print("{0} is a leap year".format(year))
-       else:
-           print("{0} is not a leap year".format(year))
-   else:
-       print("{0} is a leap year".format(year))
-else:
-   print("{0} is not a leap year".format(year))
+
+for i in mac:
+    if i in mapper:
+        final_string.append(mapper[i])
+    else:
+        final_string.append(i)
+
+print("".join([str(x) for x in final_string]))
+
+
+
+
+
+
+
+
