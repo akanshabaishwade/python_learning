@@ -1,22 +1,23 @@
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
-import os
-import sys
+def deco(func):
+    def inner(x):
+        num = func.__closure__[0].cell_contents
+        print("I multiply with " + str(num))
+        return func(x)
+    return inner
 
 
-def main():
-    """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
-    try:
-        from django.core.management import execute_from_command_line
-    except ImportError as exc:
-        raise ImportError(
-            "Couldn't import Django. Are you sure it's installed and "
-            "available on your PYTHONPATH environment variable? Did you "
-            "forget to activate a virtual environment?"
-        ) from exc
-    execute_from_command_line(sys.argv)
+def make_multiplier_of(n):
+    def multiply(x):
+        return x*n
+    return multiply
 
 
-if __name__ == '__main__':
-    main()
+multi7 = make_multiplier_of(7)
+multi7 = deco(multi7)
+print(multi7(5))
+
+@deco
+def make_multiplier_of(n):
+    def multiply(x):
+        return x*n
+    return multiply
