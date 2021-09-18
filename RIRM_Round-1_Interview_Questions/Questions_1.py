@@ -7,6 +7,7 @@ mapper = {
 final_string = []
 
 
+
 for i in mac:
     if i in mapper:
         final_string.append(mapper[i])
