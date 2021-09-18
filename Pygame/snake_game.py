@@ -1,7 +1,6 @@
 import pygame, sys, time, random
 
 
-
 difficulty = 25
 frame_size_x = 720
 frame_size_y = 480
