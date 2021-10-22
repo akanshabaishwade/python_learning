@@ -4,3 +4,31 @@ for idx,a in enumerate(words):
     print(words[idx])
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
