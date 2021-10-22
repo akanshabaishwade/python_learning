@@ -3,5 +3,4 @@ for idx,a in enumerate(words):
     print(idx,a)
     print(words[idx])
     
-    
-    
+  
